@@ -1,0 +1,86 @@
+/**
+ * Plugin Name: WP Notification Bars by MyThemeShop
+ * Author URI: https://mythemeshop.com/
+ */
+.mtsnb-tabs *, .mtsnb-tabs *:before, .mtsnb-tabs *:after { box-sizing: border-box }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both }
+.clearfix { *zoom: 1  }
+.mtsnb-tabs label, .mtsnb-tabs p { font-size: 15px }
+.utm-text { min-width: 150px; float: left; }
+.mtsnb-remove-utm-tag { position: absolute; right: 15px; top: 5px; }
+.mtsnb-tabs p { color: #7f7f7f }
+.mtsnb-tabs input[type="text"]:not(.wp-color-picker), .mtsnb-tabs input[type="number"], .mtsnb-tabs select, .mtsnb-tabs textarea { font-size: 15px; color: #aaaaaa; line-height: 22px; padding: 9px 20px; background: #ffffff; margin: 0; border: 1px solid #eaebec; outline: none!important; box-shadow: none!important; }
+.mtsnb-tabs button, .mtsnb-tabs .button:not(.wp-picker-clear, .mtsnb-load-palette), .mtsnb-tabs input[type="submit"] { font-size: 15px!important; padding: 9px 20px!important; height: auto!important; line-height: 22px!important; outline: none!important; }
+.mtsnb-tabs button:focus, .mtsnb-tabs .button:focus, .mtsnb-tabs input[type="submit"]:focus { outline: none!important; box-shadow: none!important; }
+.mtsnb-tabs input[type="text"], .mtsnb-tabs input[type="number"], .mtsnb-tabs select, .mtsnb-tabs textarea { width: 100% }
+.mtsnb-tabs select { height: auto }
+.mtsnb-tabs textarea { width: 100%; max-width: 100%; height: 200px; }
+.mtsnb-tabs input:focus, .mtsnb-tabs select:focus, .mtsnb-tabs textarea:focus, .select2-container--default.select2-container--focus .select2-selection--multiple { border-color: #a4e3fa; color: #666666; outline: none; }
+/*Tabs*/
+.mtsnb-tabs { padding: 20px; font-size: 16px; }
+.mtsnb-tabs-inner { background: #fdfdfd }
+.mtsnb-tabs-nav { float: left; margin: 0; }
+#main-tabs-nav { width: 100%; padding-right: 0; }
+#main-tabs-wrap { }
+.mtsnb-tabs-nav li, #conditions-selector li { float: left; display: inline-block; width: 100%; clear: left; margin: 0; }
+#main-tabs-nav li { width: 25%; display: block; clear: none; border-right: 1px solid #34aad5; }
+#main-tabs-nav li:last-child { border-right: 0 }
+.mtsnb-tabs-nav li a, #conditions-selector li { float: left; width: 100%; background: #45bbe6; color: #fff; padding: 15px; font-size: 15px; text-decoration: none; outline: none !important; position: relative; }
+.mtsnb-tabs-nav li a:hover, .mtsnb-tabs-nav li a.active { background: #0074A2 }
+.mtsnb-tabs-nav li a:focus { color: #fff; box-shadow: none; }
+.mtsnb-tabs-nav li a.active { pointer-events: none }
+#sub-tabs-nav li a, #conditions-selector li { padding-right: 60px; font-weight: bold; background: #ffffff; border: 1px solid #eaebec; margin: -1px 0 0 -1px; color: #aaaaaa; position: relative; cursor: pointer; }
+#sub-tabs-nav li a.active, #sub-tabs-nav li a:hover, #conditions-selector li.active, #conditions-selector li:hover { background: #45BBE6; border-color: #45BBE6; border-left-color: #45bbe6; color: #fff; }
+#sub-tabs-nav li a.active:after, #conditions-selector li.active:after { content: ''; position: absolute; border-style: solid; border-width: 9px 0 9px 9px; border-color: rgba(0, 0, 0, 0) #45BBE6; display: block; width: 0; z-index: 1; right: -9px; top: 50%; margin-top: -9px; }
+#sub-tabs-nav li a.active:before, #conditions-selector li.active:before { content: ''; position: absolute; border-style: solid; border-width: 9px 0 9px 9px; border-color: rgba(0, 0, 0, 0) #45BBE6; display: block; width: 0; z-index: 0; right: -10px; top: 50%; margin-top: -9px; }
+#conditions-selector li { padding-left: 50px; padding-right: 25px; }
+.mtsnb-tab-title { display: block }
+.mtsnb-tab-title { font-size: 16px; font-weight: bold; text-transform: uppercase; text-align: center; }
+.mtsnb-tab-title .dashicons { margin-right: 8px }
+/*tab content*/
+.mtsnb-tabs-content { display: none; float: left; width: 100%; clear: both; }
+.mtsnb-tabs-content.active { display: block }
+.mtsnb-ab-slider-label { margin-bottom: 5px }
+.mtsnb-tab-desc { border-width: 0 1px 0 1px; border-style: solid; border-color: #eaebec; background: #ffffff; line-height: 24px; color: #666666; padding: 30px 26px; }
+.mtsnb-tab-options, #conditions-selector-wrap { padding: 30px; border: 1px solid #eaebec; }
+.mtsnb-tab-options { padding-top: 10px; }
+#tab-type .mtsnb-tab-options, #tab-conditions .mtsnb-tab-options, #conditions-selector-wrap { padding: 0 }
+#tab-type .meta-tabs-wrap, #tab-conditions .meta-tabs-wrap { padding-top: 30px }
+#sub-tabs-wrap { overflow: hidden }
+.form-row { float: left; width: 100%; clear: both; margin: 15px 0; padding: 0; }
+#tab-type .mtsnb-tab-options .form-row { padding: 0 30px }
+.form-label { float: left; width: 25%; color: #7f7f7f; padding-right: 20px; padding-top: 12px; }
+.form-label:hover { color: #666666 }
+.form-option { float: left; width: 75%; }
+.clear-image { margin: 0 10px; vertical-align: bottom; }
+#preview-bar { width: 100%; padding: 10px; height: auto; text-align: center; }
+.mtsnb-tabs .wp-color-result, .mtsnb-tabs .wp-picker-container .button { height: auto }
+.mtsnb-tabs .wp-picker-container .button, .mtsnb-tabs  .wp-color-result:after { line-height: 26px }
+.mtsnb-tabs .wp-picker-container input[type=text].wp-color-picker { width: 70px }
+.mtsnb-submit { pointer-events: none }
+.mtsnb-tabs input[type=checkbox] { margin-top: 12px }
+/*conditions*/
+/*checkboxes*/
+#conditions-selector { float: left }
+#conditions-selector ul { margin: 0 }
+#conditions-selector .mtsnb-check, #conditions-selector .mtsnb-check:after { position: absolute; border-radius: 50%; }
+#conditions-selector .mtsnb-check { top: 15px; left: 15px; width: 17px; height: 17px; border: 1px solid #cccccc; }
+#conditions-selector .mtsnb-check:after { content: ""; top: 3px; left: 3px; width: 9px; height: 9px; background: #cccccc; }
+#conditions-selector .condition-checkbox.active .mtsnb-check, #conditions-selector .condition-checkbox:hover .mtsnb-check { border-color: #FFFFFF;}
+#conditions-selector .condition-checkbox.active .mtsnb-check:after, #conditions-selector .condition-checkbox:hover .mtsnb-check:after { background: #FFFFFF;}
+#conditions-selector ul li.disabled { color: #dcdcdc; pointer-events: none; }
+#conditions-selector .condition-checkbox.disabled .mtsnb-check { border-color: #dcdcdc }
+#conditions-selector .condition-checkbox.disabled .mtsnb-check:after { background: #dcdcdc }
+/*panels*/
+#conditions-panels { overflow: hidden }
+.mtsnb-conditions-panel { padding: 15px; display: none; }
+.mtsnb-conditions-panel.active { display: block }
+.mtsnb-conditions-panel-title, .mtsnb-conditions-panel-content { padding: 15px }
+.mtsnb-conditions-panel-title { color: #666666; font-size: 18px; font-weight: 700; }
+.mtsnb-conditions-panel-desc input[type="number"] { width: 90px }
+.mtsnb-conditions-panel-opt { margin-top: 15px; padding-left: 15px; padding-right: 15px; }
+.text-center { text-align: center }
+.mtsnb-colors-loader { margin-bottom: 12px }
+.mtsnb-small-select { width: auto!important; padding: 5px!important; margin: -3px 5px 0 5px!important; }
+.mtsnb-bar-select { max-width: 100% }
